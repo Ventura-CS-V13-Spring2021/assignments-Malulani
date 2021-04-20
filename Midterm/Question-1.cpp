@@ -17,3 +17,11 @@ float sum, average;
 sum = score1 + score2;
 average = sum / 2;
 cout << "\tSum: " << sum << "\tAverage: " << average<<endl;
+
+if (average > 80)
+count++;
+}
+cout << "\n-----\n";
+cout << "\nNumber of Students having average greater than 80 are " << count;
+return 0;
+}
