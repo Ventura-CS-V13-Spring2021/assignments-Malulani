@@ -64,3 +64,17 @@ if (n3 > n1 && n3 > n2)
 return n3;
 
 }
+
+int getDifference(int num1, int num2)
+{
+int diff = abs(num1 = num2);
+return diff;
+}
+
+void writeFile(int diff)
+{
+ofstream question3;
+question3.open("question3.txt",ios::app); 
+question3 << diff <<" ";
+
+}
