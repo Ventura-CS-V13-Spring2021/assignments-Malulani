@@ -1,0 +1,15 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+  double Celsius, Farenheit;
+
+  cout << "Enter temp. by celsius\n";
+  cin >> Celsius;
+
+  Farenheit = 9/5.0 * Celsius + 32;
+
+  cout << Celsius << "Celsius is" << Farenheit << "Farenheit\n";
+}
