@@ -24,3 +24,22 @@ if (isGreater(num[i],number))
 numbers << num[i];
 numbers << " ";
 }
+}
+numbers.close();
+}
+
+int getNum()
+{
+int num;
+num = (rand() % 50) + 1;
+cout << num<<":";
+return num;
+}
+
+int isGreater(int num1,int num2)
+{
+if (num2 > num1)
+return 1;
+else
+return 0;
+}
