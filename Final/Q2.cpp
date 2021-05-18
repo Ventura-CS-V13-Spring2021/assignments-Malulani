@@ -23,3 +23,9 @@ public:
 	Student(Student& rhs)
 	{
 		name = rhs.name;
+    numClasses = rhs.numClasses;
+		classList = new string[numClasses];
+		for (int i = 0; i < numClasses; i++)
+		{
+			classList[i] = rhs.classList[i]; 
+		}
