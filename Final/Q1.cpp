@@ -24,3 +24,15 @@ int main()
 }
 
 int getNumDiv(int num)
+{
+	int n = num / 2;
+	int count = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		if (num % i == 0)
+		{
+			count++;
+		}
+	}
+	return count;
+}
