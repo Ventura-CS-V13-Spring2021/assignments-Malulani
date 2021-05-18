@@ -104,3 +104,29 @@ public:
 			classList = new string[numClasses]; 
 			cout<<"For Student "<<name<<endl;
 			for (int i = 0; i < numClasses; i++)
+      {
+				cout << "Enter Course No " << i + 1<<" : ";
+				cin >> classList[i];
+			}
+		}
+	}
+
+	int getNumClasses()
+	{
+		return numClasses;
+	}
+	
+	~Student()
+	{ 
+		numClasses=0;
+		name="";
+		delete[] classList;
+	}
+};
+
+int main()
+{
+	Student s;
+	s.setName("Mr.James");
+	s.setNumClasses(3);
+	s.output();
