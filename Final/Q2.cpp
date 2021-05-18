@@ -80,3 +80,33 @@ void input()
 		}
 		return *this;
 	}
+
+  void setName(string n)
+	{
+		name = n;
+	}
+
+	string getName()
+	{
+		return name;
+	}
+
+	void setNumClasses(int v)
+	{
+		if(v<0)
+		{
+		 	reset();	
+		}
+		else
+		{ 
+			reset();
+			numClasses = v;
+			classList = new string[numClasses]; 
+			cout<<"For Student "<<name<<endl;
+			for (int i = 0; i < numClasses; i++)
+			{
+				cout << "Enter Course No " << i + 1<<" : ";
+				cin >> classList[i];
+			}
+		}
+	}
