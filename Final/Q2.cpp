@@ -110,3 +110,15 @@ void input()
 			}
 		}
 	}
+  int getNumClasses()
+	{
+		return numClasses;
+	}
+	
+	~Student()
+	{ 
+		numClasses=0;
+		name="";
+		delete[] classList;
+	}
+};
