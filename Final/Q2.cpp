@@ -29,3 +29,10 @@ public:
 		{
 			classList[i] = rhs.classList[i]; 
 		}
+}
+
+void input()
+{
+	int num;
+	cout<<"Enter Student Name: ";
+	cin>>name;
