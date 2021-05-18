@@ -122,3 +122,16 @@ void input()
 		delete[] classList;
 	}
 };
+
+int main()
+{
+	Student s;
+	s.setName("Mr.James");
+	s.setNumClasses(3);
+	s.output();
+	//Copy Constructor check
+	Student copy(s);
+	s.reset();
+	//to check the that copy is completely different object
+	s.~Student();
+	copy.output();
