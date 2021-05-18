@@ -14,3 +14,12 @@ public:
 		numClasses = num;
 		classList = new string[num];
 		for (int i = 0; i < numClasses; i++)
+    {
+			cout << "Enter the course name: ";
+			cin >> classList[i];
+		}
+	}
+
+	Student(Student& rhs)
+	{
+		name = rhs.name;
