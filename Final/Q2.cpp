@@ -67,3 +67,16 @@ void input()
 		numClasses = 0;
 		delete[] classList;
 	}
+
+  Student operator=(const Student& rhs)
+	{
+		this->reset();
+		name = rhs.name;
+		numClasses = rhs.numClasses;
+		classList = new string[numClasses];
+		for (int i = 0; i < numClasses; i++)
+		{
+			classList[i] = rhs.classList[i];
+		}
+		return *this;
+	}
