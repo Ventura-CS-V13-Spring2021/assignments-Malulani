@@ -135,3 +135,16 @@ int main()
 	//to check the that copy is completely different object
 	s.~Student();
 	copy.output();
+
+  cout<<"Test 02\n";
+	Student s1;
+	//Input test
+	s1.input();
+	s1.output();
+	//Assignment operator check
+	s1=copy;
+	copy.~Student();
+	s1.output();
+
+	return 0;
+}
