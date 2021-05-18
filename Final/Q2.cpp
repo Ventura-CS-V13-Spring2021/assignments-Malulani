@@ -30,3 +30,26 @@ public:
 			classList[i] = rhs.classList[i]; 
 		}
 	}
+
+  void input()
+	{
+		int num;
+		cout<<"Enter Student Name: ";
+		cin>>name;
+		do
+		{
+			cout << "\nEnter the number of classes, student enroll in : ";
+			cin >> num;
+		}while(num<=0);
+		
+		numClasses = num;
+		classList = new string[numClasses];
+		for (int i = 0; i < numClasses; i++)
+		{
+			cout << "Course No " << i + 1<<" : ";
+			cin >> classList[i];
+		}
+	}
+
+	void output()
+	{
