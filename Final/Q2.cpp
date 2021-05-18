@@ -51,3 +51,19 @@ void input()
 		}
 	}
   
+  void output()
+	{
+		cout << "Name : " << name << endl;
+		cout << "Classes in which " << name << ", Enrolled!" << endl;
+		for (int i = 0; i < numClasses; i++)
+		{
+			cout << classList[i] << endl;
+		}
+
+	}
+
+	void reset()
+	{
+		numClasses = 0;
+		delete[] classList;
+	}
